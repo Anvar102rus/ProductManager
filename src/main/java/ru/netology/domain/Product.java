@@ -1,4 +1,4 @@
-package ru.netology;
+package ru.netology.domain;
 
 public class Product {
     private int id;
@@ -11,7 +11,7 @@ public class Product {
         this.name = name;
     }
 
-    public Product () {
+    public Product() {
 
     }
 

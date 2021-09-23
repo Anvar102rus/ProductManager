@@ -1,32 +1,31 @@
 package repository;
 
-import ru.netology.Magazine;
-import ru.netology.Product;
-import ru.netology.Smartphone;
+import ru.netology.domain.Product;
 
 public class Repository {
 
-    private Product [] items = new Product[0];
+    private Product[] items = new Product[0];
 
-    public  void save(Product item) {
+    public void save(Product item) {
         int lenght = items.length + 1;
-        Product [] tmp = new Product[lenght];
+        Product[] tmp = new Product[lenght];
         System.arraycopy(items, 0, tmp, 0, items.length);
         int lastIndex = tmp.length - 1;
         tmp[lastIndex] = item;
         items = tmp;
     }
+
     public Product[] findAll() {
         return items;
     }
 
-    public void removeById (int id) {
+    public void removeById(int id) {
         int length = items.length - 1;
         Product[] tmp = new Product[length];
         int index = 0;
         for (Product item : items) {
             if (item.getId() != id) {
-                tmp [index] = item;
+                tmp[index] = item;
                 index++;
             }
         }

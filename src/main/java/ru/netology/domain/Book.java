@@ -1,9 +1,9 @@
-package ru.netology;
+package ru.netology.domain;
 
-public class Magazine extends Product {
+public class Book extends Product {
     private String author;
 
-    public Magazine() {
+    public Book() {
         super();
     }
 
@@ -15,7 +15,7 @@ public class Magazine extends Product {
         this.author = author;
     }
 
-    public Magazine(int id, int price, String name, String author) {
+    public Book(int id, int price, String name, String author) {
         super(id, price, name);
         this.author = author;
     }

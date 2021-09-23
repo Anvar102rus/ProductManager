@@ -1,9 +1,9 @@
 package manager;
 
 import repository.Repository;
-import ru.netology.Magazine;
-import ru.netology.Product;
-import ru.netology.Smartphone;
+import ru.netology.domain.Book;
+import ru.netology.domain.Product;
+import ru.netology.domain.Smartphone;
 
 public class ManagerProduct {
     private Repository repository;
@@ -31,8 +31,8 @@ public class ManagerProduct {
     }
 
     public boolean matches(Product product, String search) {
-        if (product instanceof Magazine) {
-            Magazine magazine = (Magazine) product;
+        if (product instanceof Book) {
+            Book magazine = (Book) product;
             if (magazine.getAuthor().contains(search)) {
                 return true;
             }
