@@ -1,5 +1,6 @@
 package ru.netology.domain;
 
+
 public class Product {
     private int id;
     private int price;
