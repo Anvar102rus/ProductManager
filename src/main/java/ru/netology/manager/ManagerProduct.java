@@ -1,6 +1,6 @@
-package ru.netology.domain.manager;
+package ru.netology.manager;
 
-import ru.netology.domain.repository.Repository;
+import ru.netology.repository.Repository;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;

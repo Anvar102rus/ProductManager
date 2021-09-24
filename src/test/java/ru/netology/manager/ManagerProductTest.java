@@ -1,8 +1,8 @@
-package ru.netology.domain.manager;
+package ru.netology.manager;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ru.netology.domain.repository.Repository;
+import ru.netology.repository.Repository;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
@@ -70,6 +70,8 @@ class ManagerProductTest {
         Product[] expected = new Product[]{};
         assertArrayEquals(expected, actual);
     }
+
+
 
 
 }
