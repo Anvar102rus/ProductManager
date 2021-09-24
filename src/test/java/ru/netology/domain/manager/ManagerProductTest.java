@@ -1,13 +1,11 @@
-package manager;
+package ru.netology.domain.manager;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import repository.Repository;
+import ru.netology.domain.repository.Repository;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
-
-import java.awt.image.PackedColorModel;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
@@ -67,7 +65,7 @@ class ManagerProductTest {
     }
 
     @Test
-    void emptysearch() {
+    void searchEmptySearch() {
         Product[] actual = manager.searchBy("Glamour");
         Product[] expected = new Product[]{};
         assertArrayEquals(expected, actual);
